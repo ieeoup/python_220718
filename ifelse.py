@@ -15,9 +15,16 @@
 # print("등급은 :", grade)
 
 #반복문
-value = 5
-while value > 0:
-    print(value)
-    value -= 1
+# value = 5
+# while value > 0:
+#     print(value)
+#     value -= 1
 
+#조건이 되는 함수 정의
+def getBiggerThan20(i):
+    return 1 > 20
 
+print("--- 람다함수사용---")
+iterL = filter(lambda x:x>20, lst)
+for item in iterL:
+    print(item)
